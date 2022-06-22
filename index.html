@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/syle.css">
-    <title>Survey-Form</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/syle.css" />
+    <title>Survey-Form 📑</title>
+  </head>
+  <body>
     <h1 id="title">Survey-Form</h1>
     <p id="description">
-        Thanks for taking the time to Tell us some interesting about you
+      Thanks for taking the time to Tell us some interesting about you
     </p>
 
     <form id="survey-form">
-        <label id="name-label">Name:</label>
-        <input type="text" name="name" id="name" required placeholder="Your Name here"><br>
-        <label id="email-label">Email:</label>
-        <input type="email" name="email" id="email" required placeholder="Email here"><br>
-        <label id="number-label">Number:</label>
-        <input type="number" name="number" id="number" min="0" max="5" required placeholder="Number"><br>
+      <label id="name-label">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        placeholder="Your Name here"
+      /><br />
+      <label id="email-label">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Email here"
+      /><br />
+      <label id="number-label">Number:</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="5"
+        required
+        placeholder="Number"
+      /><br />
 
+      <label id="Additional-Comments-label">Additional Comments:</label>
+      <textarea placeholder="Additional Comments"></textarea><br />
 
-        <label id="Additional-Comments-label">Additional Comments:</label>
-        <textarea placeholder="Additional Comments"></textarea><br>
+      <br />
+      <label id="Places">Where you from</label>
+      <select id="dropdown" name="cars" id="Places">
+        <option value="Karachi">Karachi</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Kashmir">Kashmir</option></select
+      ><br />
 
-        <br>
-        <label id="Places">Where you from</label>
-        <select id="dropdown" name="cars" id="Places">
-            <option value="Karachi">Karachi</option>
-            <option value="Islamabad">Islamabad</option>
-            <option value="Lahore">Lahore</option>
-            <option value="Kashmir">Kashmir</option>
-          </select><br>
+      <br />
+      <div id="button-area">
+        <label id="Gender">Gender</label>
+        <input
+          type="radio"
+          id="Gender"
+          name="fav_language"
+          value="Male"
+        />Male<br />
+        <input
+          type="radio"
+          id="Gender"
+          name="fav_language"
+          value="Female"
+        />Female<br />
+        <input
+          type="radio"
+          id="Gender"
+          name="fav_language"
+          value="Other"
+        />Other<br />
+        <br />
+      </div>
+      <br />
+      <div id="separate-label">
+        <label id="Transportation type">Transportation type</label>
+        <input type="checkbox" name="vehicle1" value="Bike" />I have a Bike<br />
+        <input type="checkbox" name="vehicle2" value="Car" />I have a Car<br />
+        <input type="checkbox" name="vehicle3" value="Boat" />I have a Jeep<br />
+        <br />
+      </div>
 
-        <br>
-        <div id="button-area">
-            <label id="Gender">Gender</label>
-            <input type="radio" id="Gender" name="fav_language" value="Male">Male<br>
-            <input type="radio" id="Gender" name="fav_language" value="Female">Female<br>
-            <input type="radio" id="Gender" name="fav_language" value="Other">Other<br>
-        <br>
-        </div>
-        <br>
-        <div id="separate-label">
-            <label id="Transportation type">Transportation type</label>
-                <input type="checkbox" name="vehicle1" value="Bike">I have a Bike<br>
-                <input type="checkbox" name="vehicle2" value="Car">I have a Car<br>
-                <input type="checkbox" name="vehicle3" value="Boat">I have a Jeep<br>
-                <br>
-        </div>
-
-
-        <input type="submit" id="submit">
+      <input type="submit" id="submit" />
     </form>
 
-    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+  </body>
 </html>
