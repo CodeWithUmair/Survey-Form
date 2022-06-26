@@ -18,7 +18,7 @@ body {
   right: 0;
   color: #ffffff;
   overflow-y: scroll;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .main::after {
@@ -62,6 +62,7 @@ body {
 #name,
 #email,
 #number,
+#age,
 #dropdown,
 #comment {
   display: block;
@@ -72,7 +73,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 40px;
 }
 
@@ -83,16 +84,44 @@ label[for="dropdown"],
 label[for="comment"] {
   margin-bottom: 1.6rem;
   display: inline-block;
+  font-size: 1.5rem;
 }
 
-#video-length,
-#content-quality,
-#more-videos,
+.onlyForMarginBottom {
+  margin-bottom: 4rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+#place1,
+#place2,
+#place3,
+#place4,
+#place5,
+#place6,
+#place7,
+#place8,
+#place9,
+#place10 {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+.fa-solid {
+  color: #37af65;
+}
 fieldset input {
   height: 20px;
   width: 20px;
   margin-right: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
+  margin-left: 1.5rem;
 }
 
 #comment {
