@@ -36,7 +36,6 @@ body {
   font-size: 2.3rem;
   z-index: 2;
   position: relative;
-  box-shadow: 0px -1px 10px 5px rgb(192, 123, 192);
 }
 
 .main > p {
@@ -44,18 +43,17 @@ body {
   font-size: 1.3rem;
   z-index: 2;
   position: relative;
-  box-shadow: 0px -1px 10px 5px rgb(192, 123, 192);
 }
 
 .main-content {
-  background-color: rgba(36, 14, 41, 0.9);
+  background-color: rgba(36, 14, 41, 0.8);
   max-width: 650px;
   display: flex;
   flex-direction: column;
   padding: 40px;
   margin: 0 auto;
   margin-bottom: 40px;
-  border-radius: 5px;
+  border-radius: 15px;
   z-index: 2;
   position: relative;
   box-shadow: 0px -1px 10px 5px rgb(192, 123, 192);
@@ -83,7 +81,7 @@ label[for="email"],
 label[for="number"],
 label[for="dropdown"],
 label[for="comment"] {
-  margin-bottom: 10px;
+  margin-bottom: 1.6rem;
   display: inline-block;
 }
 
@@ -117,11 +115,35 @@ label[for="comment"] {
   font-size: 20px;
 }
 @media only all and (max-width: 768px) {
-  .main > h1,
+  .main > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
   .main > p {
     text-align: center;
-    font-size: 5px;
-    z-index: 2;
-    position: relative;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .main-content {
+    background-color: rgba(36, 14, 41, 0.8);
+    max-width: 100%;
+    padding: 40px;
+    margin: 0 0.8rem;
+    margin-bottom: 40px;
+    border-radius: 15px;
+  }
+}
+
+@media only all and (max-width: 525px) {
+  .main > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .main > p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
   }
 }

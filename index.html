@@ -17,27 +17,29 @@
       <div class="main-content">
         <div class="form-content">
           <form id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input id="name" type="text" required placeholder="your name" />
+            <label for="name" id="name-label">Full Name</label>
+            <input id="name" type="text" required placeholder="my name" />
             <label for="email" id="email-label">Email</label>
-            <input id="email" type="email" required placeholder="your email" />
-            <label for="number" id="number-label">How old are you</label>
+            <input id="email" type="email" required placeholder="my email" />
+            <label for="number" id="number-label">your age</label>
             <input
               id="number"
               type="number"
               min="1"
               max="100"
               required
-              placeholder="Enter your rate"
+              placeholder="my age"
             />
 
             <label for="dropdown"
               >Which option best describes your current role?</label
             >
             <select id="dropdown">
+              <option value="professional-tourist">Professional Tourist</option>
+              <option value="studen">Professional Tourist</option>
               <option value="studen">Student</option>
-              <option value="full-time-learner">Full time learner</option>
-              <option value="full-time-job">Full time job</option>
+              <option value="full-time-employee">Full time employee</option>
+              <option value="business-man">Business man</option>
               <option value="prefer-not-to-say">Prefer not to say</option>
               <option value="other">Other</option>
             </select>
